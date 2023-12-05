@@ -104,8 +104,11 @@ void Vagon()
         {
             if ((1 + array[i]) == array[i + 1] && (2 + array[i]) == array[i + 2] && (3 + array[i]) == array[i + 3])
             {
-                temp = 54 - array[i] + array[i] / 2;
-                if (temp == 53 || temp == 51 || temp == 49 || temp == 47 || temp == 45 || temp == 43 || temp == 41 || temp == 39 || temp == 37)
+                if (((54 - array[i] + array[i] / 2) == 53) && ((54 - array[i] + array[i] / 2 + 1) == 54) || ((54 - array[i] + array[i] / 2) == 51) && ((54 - array[i] + array[i] / 2 + 1) == 52)
+                    || ((54 - array[i] + array[i] / 2) == 49) && ((54 - array[i] + array[i] / 2 + 1) == 50) || ((54 - array[i] + array[i] / 2) == 47) && ((54 - array[i] + array[i] / 2 + 1) == 48)
+                    || ((54 - array[i] + array[i] / 2) == 45) && ((54 - array[i] + array[i] / 2 + 1) == 46) || ((54 - array[i] + array[i] / 2) == 43) && ((54 - array[i] + array[i] / 2 + 1) == 44)
+                    || ((54 - array[i] + array[i] / 2) == 41) && ((54 - array[i] + array[i] / 2 + 1) == 42) || ((54 - array[i] + array[i] / 2) == 39) && ((54 - array[i] + array[i] / 2 + 1) == 40)
+                    || ((54 - array[i] + array[i] / 2) == 37) && ((54 - array[i] + array[i] / 2 + 1) == 38))
                 {
                     result++;
                 }
