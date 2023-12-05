@@ -56,7 +56,7 @@ void Spinner2()
 
 void Kvadrat()
 {
-    int n, m, result{ 0 };
+    int n, m, result{ 0 }, temp;
     cout << "Введите размер листа" << endl;
     cin >> n >> m;
 
@@ -104,7 +104,8 @@ void Vagon()
         {
             if ((1 + array[i]) == array[i + 1] && (2 + array[i]) == array[i + 2] && (3 + array[i]) == array[i + 3])
             {
-                if ((54 - array[i] + array[i] / 2) && (54 - array[i] + array[i] / 2 + 1))
+                temp = 54 - array[i] + array[i] / 2;
+                if (temp == 53 || temp == 51 || temp == 49 || temp == 47 || temp == 45 || temp == 43 || temp == 41 || temp == 39 || temp == 37)
                 {
                     result++;
                 }
