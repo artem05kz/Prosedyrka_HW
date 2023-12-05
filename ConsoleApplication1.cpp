@@ -121,8 +121,7 @@ void Vagon()
 }
 
 void Kino()
-{
-    system("chcp 1251 >> null");
+{   
     int N, K, left, right, i1 = 0, i2 = 0, sum = 0, max = 0;
     cout << "Введите количество мест N в ряду: ";
     cin >> N;
